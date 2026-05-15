@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "version": "1.0",
+    "language": "fr",
+    "scoring": "dimensional_euclidean",
+    "axis_conventions": {
+      "introvert_extrovert": "0 = introvert, 1 = extrovert",
+      "intuition_sensing": "0 = sensing, 1 = intuition",
+      "thinking_feeling": "0 = thinking, 1 = feeling",
+      "structure_freedom": "0 = freedom, 1 = structure"
+    },
+    "element_encoding": {
+      "note": "Parse animal element string to a 4-component vector [terre, air, feu, eau]",
+      "terre": [1, 0, 0, 0],
+      "air": [0, 1, 0, 0],
+      "feu": [0, 0, 1, 0],
+      "eau": [0, 0, 0, 1],
+      "terre/feu": [0.5, 0, 0.5, 0],
+      "eau/terre": [0.5, 0, 0, 0.5],
+      "air/terre": [0.5, 0.5, 0, 0]
+    },
+    "element_weight": 2.0,
+    "tiebreaker_threshold": 0.15,
+    "algorithm": "1. After all core questions, compute user's element vector (average of element answers, each a unit 4-vector) and user's float scores (average of answered values per dimension). 2. For each of 15 animals, compute total_distance = sqrt(element_weight² × ||user_element - animal_element||² + Σ(user_dim - animal_dim)² for all 4 float dims). 3. Rank animals ascending by distance. 4. If |distance[rank0] - distance[rank1]| < tiebreaker_threshold, look up the tiebreaker_pair for those two animal IDs and present that question. 5. Return { totem: winner_id, shadow: winner.shadow_animal }.",
+    "question_groups": ["element", "introvert_extrovert", "intuition_sensing", "thinking_feeling", "structure_freedom"]
+  },
+  "core_questions": [
+    {
+      "id": "q01",
+      "group": "element",
+      "text": "Pour vous ressourcer vraiment, vous cherchez instinctivement...",
+      "options": [
+        { "id": "a", "text": "La forêt, la montagne, la terre sous les pieds — quelque chose de solide et d'ancien", "scores": { "element": "terre" } },
+        { "id": "b", "text": "L'océan, la rivière, la pluie — quelque chose qui coule et qui emporte", "scores": { "element": "eau" } },
+        { "id": "c", "text": "Un sommet dégagé, le vent, un grand ciel ouvert — quelque chose de vaste", "scores": { "element": "air" } },
+        { "id": "d", "text": "Un feu de camp, le désert, la chaleur — quelque chose qui brûle et illumine", "scores": { "element": "feu" } }
+      ]
+    },
+    {
+      "id": "q02",
+      "group": "element",
+      "text": "Dans les moments décisifs de votre vie, quelle force vous a le plus porté(e) ?",
+      "options": [
+        { "id": "a", "text": "L'ancrage — revenir à ce qui est réel, solide, essentiel", "scores": { "element": "terre" } },
+        { "id": "b", "text": "La fluidité — laisser les émotions guider, suivre le courant profond", "scores": { "element": "eau" } },
+        { "id": "c", "text": "La clarté — prendre de la hauteur, voir depuis un autre angle", "scores": { "element": "air" } },
+        { "id": "d", "text": "L'élan — agir, transformer, convertir l'énergie en mouvement", "scores": { "element": "feu" } }
+      ]
+    },
+    {
+      "id": "q03",
+      "group": "introvert_extrovert",
+      "text": "Après une longue soirée avec beaucoup de monde, vous avez besoin de...",
+      "options": [
+        { "id": "a", "text": "Retrouver le silence et la solitude — les interactions vous ont épuisé(e)", "scores": { "introvert_extrovert": 0.05 } },
+        { "id": "b", "text": "Un moment calme avec une ou deux personnes de confiance", "scores": { "introvert_extrovert": 0.35 } },
+        { "id": "c", "text": "Encore quelques échanges, mais dans une ambiance plus intime", "scores": { "introvert_extrovert": 0.65 } },
+        { "id": "d", "text": "Recommencer — le contact avec les autres vous a rechargé(e)", "scores": { "introvert_extrovert": 0.95 } }
+      ]
+    },
+    {
+      "id": "q04",
+      "group": "introvert_extrovert",
+      "text": "Face à un problème difficile, votre premier réflexe est de...",
+      "options": [
+        { "id": "a", "text": "Vous retirer pour réfléchir seul(e) — la solitude aide à voir clair", "scores": { "introvert_extrovert": 0.10 } },
+        { "id": "b", "text": "En parler à quelques proches de confiance pour y voir plus clair", "scores": { "introvert_extrovert": 0.40 } },
+        { "id": "c", "text": "Consulter plusieurs personnes et confronter les perspectives", "scores": { "introvert_extrovert": 0.70 } },
+        { "id": "d", "text": "Rassembler un groupe, penser à voix haute — vous avez besoin du collectif", "scores": { "introvert_extrovert": 0.90 } }
+      ]
+    },
+    {
+      "id": "q05",
+      "group": "introvert_extrovert",
+      "text": "Comment décririez-vous votre rapport au monde social ?",
+      "options": [
+        { "id": "a", "text": "J'observe plus que je ne participe — quelques liens profonds me suffisent", "scores": { "introvert_extrovert": 0.10 } },
+        { "id": "b", "text": "Je choisis avec soin — la qualité des liens compte plus que le nombre", "scores": { "introvert_extrovert": 0.30 } },
+        { "id": "c", "text": "Je m'adapte selon les contextes — j'apprécie autant la compagnie que la solitude", "scores": { "introvert_extrovert": 0.65 } },
+        { "id": "d", "text": "Je m'épanouis dans le contact — les autres me stimulent et me nourrissent", "scores": { "introvert_extrovert": 0.90 } }
+      ]
+    },
+    {
+      "id": "q06",
+      "group": "intuition_sensing",
+      "text": "Quand vous rencontrez une situation nouvelle, votre premier mouvement est de...",
+      "options": [
+        { "id": "a", "text": "Percevoir l'atmosphère — les énergies en jeu, ce que les mots ne disent pas", "scores": { "intuition_sensing": 0.95 } },
+        { "id": "b", "text": "Laisser venir une impression globale avant d'analyser les détails", "scores": { "intuition_sensing": 0.70 } },
+        { "id": "c", "text": "Observer attentivement ce qui se passe concrètement, prendre des repères tangibles", "scores": { "intuition_sensing": 0.35 } },
+        { "id": "d", "text": "Cataloguer les faits — ce qui est mesurable, vérifiable, démontrable", "scores": { "intuition_sensing": 0.05 } }
+      ]
+    },
+    {
+      "id": "q07",
+      "group": "intuition_sensing",
+      "text": "Dans une décision importante, vous faites confiance en premier à...",
+      "options": [
+        { "id": "a", "text": "Mon intuition — une sensation profonde que quelque chose est juste ou non", "scores": { "intuition_sensing": 0.95 } },
+        { "id": "b", "text": "Une combinaison d'intuition et d'expériences passées", "scores": { "intuition_sensing": 0.65 } },
+        { "id": "c", "text": "Les retours du terrain — ce que j'observe dans la réalité concrète", "scores": { "intuition_sensing": 0.35 } },
+        { "id": "d", "text": "Les données, les faits, une analyse rigoureuse", "scores": { "intuition_sensing": 0.05 } }
+      ]
+    },
+    {
+      "id": "q08",
+      "group": "intuition_sensing",
+      "text": "Dans une conversation, vous êtes davantage attiré(e) par...",
+      "options": [
+        { "id": "a", "text": "Les sous-textes, les non-dits, les symboles cachés derrière les mots", "scores": { "intuition_sensing": 0.95 } },
+        { "id": "b", "text": "Les idées, les connexions inattendues, les visions à long terme", "scores": { "intuition_sensing": 0.75 } },
+        { "id": "c", "text": "Les anecdotes concrètes, les exemples réels, les détails qui comptent", "scores": { "intuition_sensing": 0.30 } },
+        { "id": "d", "text": "Les faits vérifiables, les arguments logiques, ce qui peut être prouvé", "scores": { "intuition_sensing": 0.05 } }
+      ]
+    },
+    {
+      "id": "q09",
+      "group": "thinking_feeling",
+      "text": "Quand quelqu'un vous demande un avis difficile à entendre, vous...",
+      "options": [
+        { "id": "a", "text": "Dites la vérité directement — c'est ce qui est le plus utile à long terme", "scores": { "thinking_feeling": 0.10 } },
+        { "id": "b", "text": "Pesez vos mots pour être honnête sans inutilement blesser", "scores": { "thinking_feeling": 0.40 } },
+        { "id": "c", "text": "Commencez par valider ce que la personne ressent avant d'offrir votre perspective", "scores": { "thinking_feeling": 0.70 } },
+        { "id": "d", "text": "Priorité au soutien émotionnel — la vérité peut attendre si quelqu'un souffre", "scores": { "thinking_feeling": 0.95 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "group": "thinking_feeling",
+      "text": "Face à un conflit, votre approche naturelle est de...",
+      "options": [
+        { "id": "a", "text": "Identifier ce qui ne va pas et proposer une solution concrète", "scores": { "thinking_feeling": 0.10 } },
+        { "id": "b", "text": "Chercher un terrain commun logique qui satisfasse toutes les parties", "scores": { "thinking_feeling": 0.35 } },
+        { "id": "c", "text": "Écouter ce que chacun ressent avant de chercher une résolution", "scores": { "thinking_feeling": 0.70 } },
+        { "id": "d", "text": "Prioriser la relation — la solution importe moins que la préservation du lien", "scores": { "thinking_feeling": 0.90 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "group": "thinking_feeling",
+      "text": "Ce qui guide le plus vos choix de vie :",
+      "options": [
+        { "id": "a", "text": "La cohérence logique — mes choix doivent avoir du sens rationnellement", "scores": { "thinking_feeling": 0.10 } },
+        { "id": "b", "text": "Un équilibre entre ce qui est sensé et ce qui compte pour moi", "scores": { "thinking_feeling": 0.45 } },
+        { "id": "c", "text": "Mes valeurs profondes et ce que ressentent les personnes concernées", "scores": { "thinking_feeling": 0.75 } },
+        { "id": "d", "text": "L'harmonie — éviter la souffrance inutile, préserver les liens qui comptent", "scores": { "thinking_feeling": 0.95 } }
+      ]
+    },
+    {
+      "id": "q12",
+      "group": "structure_freedom",
+      "text": "Quel est votre rapport au planning et à l'organisation ?",
+      "options": [
+        { "id": "a", "text": "J'aime un cadre clair — les imprévus me déstabilisent plus qu'ils ne m'excitent", "scores": { "structure_freedom": 0.95 } },
+        { "id": "b", "text": "Je planifie l'essentiel mais laisse de la place pour les ajustements", "scores": { "structure_freedom": 0.60 } },
+        { "id": "c", "text": "Je préfère improviser — les plans trop rigides m'oppressent", "scores": { "structure_freedom": 0.25 } },
+        { "id": "d", "text": "Je vis dans l'instant — les listes et les agendas ne font pas partie de mon monde", "scores": { "structure_freedom": 0.05 } }
+      ]
+    },
+    {
+      "id": "q13",
+      "group": "structure_freedom",
+      "text": "Dans un projet ou un travail créatif, vous fonctionnez mieux...",
+      "options": [
+        { "id": "a", "text": "Avec des instructions claires, des étapes définies et un objectif précis", "scores": { "structure_freedom": 0.95 } },
+        { "id": "b", "text": "Avec un cadre minimal et de la liberté à l'intérieur", "scores": { "structure_freedom": 0.60 } },
+        { "id": "c", "text": "Avec carte blanche — les contraintes coupent votre élan créatif", "scores": { "structure_freedom": 0.25 } },
+        { "id": "d", "text": "Dans le chaos créatif — vous trouvez votre chemin au fur et à mesure", "scores": { "structure_freedom": 0.05 } }
+      ]
+    }
+  ],
+  "tiebreaker_pairs": [
+    {
+      "id": "tb_owl_spider",
+      "animals": ["owl", "spider"],
+      "text": "Votre rapport à la connaissance et au sens :",
+      "options": [
+        { "id": "a", "text": "Je déchiffre ce qui est caché — vérités non dites, symboles, masques derrière les mots", "points_to": "owl" },
+        { "id": "b", "text": "Je tisse le sens — je relie les fils jusqu'à ce qu'une architecture cohérente apparaisse", "points_to": "spider" }
+      ]
+    },
+    {
+      "id": "tb_owl_jaguar",
+      "animals": ["owl", "jaguar"],
+      "text": "Ce qui vous est le plus difficile à maîtriser :",
+      "options": [
+        { "id": "a", "text": "Agir sans avoir tout analysé — la profondeur de ma réflexion peut me paralyser", "points_to": "owl" },
+        { "id": "b", "text": "Montrer ma vulnérabilité — ma puissance est mon masque autant que mon don", "points_to": "jaguar" }
+      ]
+    },
+    {
+      "id": "tb_jaguar_serpent",
+      "animals": ["jaguar", "serpent"],
+      "text": "Votre rapport à votre propre puissance :",
+      "options": [
+        { "id": "a", "text": "Je l'intègre — ma force est dans ma capacité à tenir sans en être possédé(e)", "points_to": "jaguar" },
+        { "id": "b", "text": "Je la transforme — ma force naît de ma capacité à muer, à tout quitter pour renaître", "points_to": "serpent" }
+      ]
+    },
+    {
+      "id": "tb_wolf_serpent",
+      "animals": ["wolf", "serpent"],
+      "text": "Ce qui anime le plus profondément votre vie intérieure :",
+      "options": [
+        { "id": "a", "text": "Le territoire et l'appartenance — trouver sa meute, tracer ses chemins, transmettre", "points_to": "wolf" },
+        { "id": "b", "text": "La transformation et le renouveau — se dépouiller de l'ancien pour révéler ce qu'on devient", "points_to": "serpent" }
+      ]
+    },
+    {
+      "id": "tb_eagle_raven",
+      "animals": ["eagle", "raven"],
+      "text": "Votre rapport à la hauteur et à la vision :",
+      "options": [
+        { "id": "a", "text": "Je m'élève pour voir plus clairement — transcender le bruit pour percevoir l'essentiel", "points_to": "eagle" },
+        { "id": "b", "text": "Je joue avec les limites — je crée à partir de l'ombre, je transgresse pour inventer", "points_to": "raven" }
+      ]
+    },
+    {
+      "id": "tb_fox_horse",
+      "animals": ["fox", "horse"],
+      "text": "Ce qui vous anime le plus profondément :",
+      "options": [
+        { "id": "a", "text": "Voir ce que les autres ne voient pas — percevoir les angles cachés, toujours en avance d'une longueur", "points_to": "fox" },
+        { "id": "b", "text": "Courir vers quelque chose — l'élan, partager son énergie, emporter les autres dans son mouvement", "points_to": "horse" }
+      ]
+    },
+    {
+      "id": "tb_bear_starfish",
+      "animals": ["bear", "starfish"],
+      "text": "Comment vous vous ressourcez après une perte ou une épreuve :",
+      "options": [
+        { "id": "a", "text": "Retrait dans une caverne intérieure — solitude totale, silence, ressources profondes inaccessibles aux autres", "points_to": "bear" },
+        { "id": "b", "text": "Régénération lente depuis le centre — je refais ce qui a été perdu, fil par fil, sans drama", "points_to": "starfish" }
+      ]
+    },
+    {
+      "id": "tb_wolf_owl",
+      "animals": ["wolf", "owl"],
+      "text": "Dans votre rapport à ceux qui comptent pour vous :",
+      "options": [
+        { "id": "a", "text": "Loyauté instinctive — je trace le chemin, je garde ma meute, je n'oublie pas ceux que j'ai choisis", "points_to": "wolf" },
+        { "id": "b", "text": "Perception profonde — je vois qui vous êtes vraiment, derrière le masque que vous montrez", "points_to": "owl" }
+      ]
+    }
+  ]
+}

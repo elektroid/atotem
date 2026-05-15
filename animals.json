@@ -1,0 +1,534 @@
+{
+  "meta": {
+    "version": "1.0",
+    "sources": [
+      "Ted Andrews - Animal Speak (1993)",
+      "Jamie Sams & David Carson - Medicine Cards (1988)",
+      "Carl Gustav Jung - Archetypes and the Collective Unconscious (1959)",
+      "Steven D. Farmer - Animal Spirit Guides (2006)",
+      "Philip & Stephanie Carr-Gomm - The Druid Animal Oracle"
+    ],
+    "tradition": "syncretic",
+    "total_animals": 15
+  },
+  "animals": [
+    {
+      "id": "wolf",
+      "name": "Loup",
+      "emoji": "🐺",
+      "archetype_jung": "Le Sage / L'Explorateur",
+      "keywords": ["instinct", "liberté", "enseignement", "meute", "territoire", "intuition"],
+      "element": "terre",
+      "traits": {
+        "strengths": ["leadership naturel", "loyauté profonde", "intelligence sociale", "instinct puissant"],
+        "shadows": ["méfiance excessive", "difficulté à faire confiance", "besoin de contrôle"],
+        "life_theme": "L'équilibre entre la liberté individuelle et l'appartenance au groupe"
+      },
+      "symbolism": {
+        "amerindian": "Enseignant, Pathfinder — grand instituteur des plaines. Transmet les chemins de la connaissance.",
+        "celtic": "Cernunnos, gardien des forêts. Symbole de la chasse sacrée et du cycle naturel.",
+        "universal": "L'instinct comme boussole. Celui qui marche seul mais n'est jamais seul."
+      },
+      "medicine": "La médecine du Loup est celle de l'enseignement par l'exemple. Il montre le chemin sans jamais le dicter.",
+      "shadow_animal": "chien",
+      "lover_profile": {
+        "style": "Loyal jusqu'à l'os, intense jusqu'à l'inconfort",
+        "strengths": "Une fois qu'il t'a choisi(e), tu es dans sa meute pour la vie. Il sent tes humeurs avant que tu les nommes, devine tes besoins dans le noir, et se souvient de tout — la première phrase que tu lui as dite, comment tu tiens ta tasse de café.",
+        "watch_out": "Il ne choisit pas souvent, mais quand il choisit, il choisit pour de vrai. Ce n'est pas quelqu'un de 'casual'. Si tu veux juste flirter sans lendemain, passe ton chemin — ou assume que tu pourrais te retrouver suivi des yeux toute ta vie.",
+        "in_bed": "L'instinct d'abord. Pas grand chose de calculé, tout de ressenti. Attentif à tes réactions comme à une piste dans la forêt.",
+        "dealbreaker": "La trahison. Une seule fois suffit. Le Loup pardonne rarement et n'oublie jamais."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.40,
+        "intuition_sensing": 0.80,
+        "thinking_feeling": 0.60,
+        "structure_freedom": 0.45
+      }
+    },
+    {
+      "id": "eagle",
+      "name": "Aigle",
+      "emoji": "🦅",
+      "archetype_jung": "Le Héros / Le Visionnaire",
+      "keywords": ["vision", "hauteur", "puissance", "clarté", "transcendance", "courage"],
+      "element": "air",
+      "traits": {
+        "strengths": ["vision globale", "courage", "détermination", "connexion spirituelle"],
+        "shadows": ["orgueil", "isolement", "mépris du détail"],
+        "life_theme": "Voir loin pour mieux comprendre l'essentiel"
+      },
+      "symbolism": {
+        "amerindian": "Messager entre les mondes humain et divin. Porter ses prières jusqu'au Grand Esprit.",
+        "celtic": "Symbole de souveraineté et de renouveau. L'aigle voit à travers les illusions.",
+        "universal": "La conscience qui s'élève au-dessus du bruit pour percevoir la vérité."
+      },
+      "medicine": "La médecine de l'Aigle est celle de la perspective — reculer pour mieux voir, s'élever pour mieux comprendre.",
+      "shadow_animal": "souris",
+      "lover_profile": {
+        "style": "Rare, intense, et légèrement intimidant",
+        "strengths": "Quand l'Aigle descend de son altitude pour toi, c'est une expérience. Il te voit vraiment — pas l'image que tu projettes, toi. Cette lucidité peut être le cadeau le plus précieux qu'on t'ait jamais fait.",
+        "watch_out": "Il passe plus de temps dans les nuages que dans ton lit. L'intimité quotidienne, les petits riens — ce n'est pas son registre naturel. Il faudra parfois lui rappeler que les grands discours sur l'avenir ne remplacent pas la présence du mardi soir.",
+        "in_bed": "Tout ou rien. Soit il est totalement là, le regard brûlant et la pleine conscience de chaque seconde, soit son esprit survole autre chose. Difficile de savoir à l'avance dans quel mode il arrive.",
+        "dealbreaker": "La médiocrité et la petitesse d'esprit. L'Aigle a besoin d'un partenaire qui vole, pas de quelqu'un à porter."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.20,
+        "intuition_sensing": 0.90,
+        "thinking_feeling": 0.25,
+        "structure_freedom": 0.20
+      }
+    },
+    {
+      "id": "bear",
+      "name": "Ours",
+      "emoji": "🐻",
+      "archetype_jung": "Le Guerrier / Le Sage Intérieur",
+      "keywords": ["introspection", "force", "protection", "guérison", "cycle", "terre"],
+      "element": "terre",
+      "traits": {
+        "strengths": ["force tranquille", "intuition profonde", "capacité à se ressourcer", "protection farouche"],
+        "shadows": ["isolement excessif", "colère dormante", "résistance au changement"],
+        "life_theme": "La force véritable naît du temps passé en soi-même"
+      },
+      "symbolism": {
+        "amerindian": "Gardien de la médecine et de l'introspection. Entre en lui-même comme dans une caverne sacrée.",
+        "celtic": "Art, roi des animaux terrestres, lié à la royauté et à la protection du territoire sacré.",
+        "universal": "Le cycle de mort et renaissance. L'hibernation comme métaphore de la transformation intérieure."
+      },
+      "medicine": "La médecine de l'Ours est celle du retrait — savoir s'isoler pour mieux revenir, puiser dans ses ressources profondes.",
+      "shadow_animal": "lapin",
+      "lover_profile": {
+        "style": "L'amant le plus câlin de tout le bestiaire",
+        "strengths": "Solide, chaud, protecteur. Avec l'Ours, tu te sens en sécurité d'une façon que tu n'avais pas anticipée. Il ne joue pas, ne parade pas, ne disparaît pas trois jours sans nouvelles. Il est là, massif et présent, et ça fait du bien.",
+        "watch_out": "Il hiberne. Émotionnellement, parfois physiquement. Quand il entre dans sa caverne intérieure, même ses proches ne peuvent plus l'atteindre. Ce n'est pas contre toi — mais ça peut faire froid.",
+        "in_bed": "Lent, attentionné, et beaucoup plus tendre qu'il n'y paraît. L'Ours ne fait pas de choses à moitié. Une fois réchauffé, il est difficile de s'en décoller.",
+        "dealbreaker": "Le bruit inutile et l'agitation sans sens. L'Ours a besoin de calme. Les partenaires dramatiques ou instables l'épuisent profondément."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.10,
+        "intuition_sensing": 0.70,
+        "thinking_feeling": 0.75,
+        "structure_freedom": 0.65
+      }
+    },
+    {
+      "id": "fox",
+      "name": "Renard",
+      "emoji": "🦊",
+      "archetype_jung": "Le Filou (Trickster) / L'Amant",
+      "keywords": ["adaptabilité", "ruse", "créativité", "discernement", "camouflage", "malice"],
+      "element": "feu",
+      "traits": {
+        "strengths": ["intelligence vive", "adaptabilité", "charme", "discernement subtil", "créativité"],
+        "shadows": ["manipulation", "évitement", "superficialité"],
+        "life_theme": "Naviguer entre les mondes, voir ce que les autres ne voient pas"
+      },
+      "symbolism": {
+        "amerindian": "Maître du camouflage — enseigne à se fondre dans l'environnement tout en restant soi-même.",
+        "celtic": "Passeur entre les mondes, guide dans les royaumes féériques. Associé à la divination.",
+        "japonais": "Kitsune — esprit shapeshifter, messager d'Inari, lié à la sagesse et à la transformation.",
+        "universal": "L'intelligence de la survie. Celui qui voit les solutions invisibles aux autres."
+      },
+      "medicine": "La médecine du Renard est celle de l'observation silencieuse — regarder avant d'agir, comprendre avant de parler.",
+      "shadow_animal": "buffle",
+      "lover_profile": {
+        "style": "Ensorcelant, insaisissable, probablement en train de te lire comme un livre",
+        "strengths": "Le Renard sait exactement ce que tu veux entendre — et le pire, c'est que c'est souvent aussi ce qu'il pense vraiment. Il est drôle, vif, imprévisible. Chaque rendez-vous ressemble à une première fois.",
+        "watch_out": "Il a horreur d'être cerné. Trop de certitudes, trop de routine, trop de 'on est ensemble alors maintenant...' et il commence à flairer la sortie. Ce n'est pas qu'il ne tient pas à toi — c'est qu'il a besoin de sentir qu'il choisit librement, chaque jour.",
+        "in_bed": "Créatif, joueur, plein de surprises. Le Renard s'ennuie vite de la répétition. Il aime les jeux, les changements de registre, les situations inattendues.",
+        "dealbreaker": "La possession. Essaie de l'enfermer et tu trouveras un terrier vide au matin."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.55,
+        "intuition_sensing": 0.85,
+        "thinking_feeling": 0.45,
+        "structure_freedom": 0.15
+      }
+    },
+    {
+      "id": "dolphin",
+      "name": "Dauphin",
+      "emoji": "🐬",
+      "archetype_jung": "L'Amant / L'Innocent",
+      "keywords": ["joie", "communication", "connexion", "harmonie", "jeu", "respiration"],
+      "element": "eau",
+      "traits": {
+        "strengths": ["empathie profonde", "joie communicative", "intelligence relationnelle", "harmonie"],
+        "shadows": ["fusion excessive", "fuite du conflit", "besoin de validation"],
+        "life_theme": "La connexion authentique comme chemin spirituel"
+      },
+      "symbolism": {
+        "greek": "Sauveurs de marins, associés à Apollon et Poséidon. Symboles de bienveillance et de guidance.",
+        "celtic": "Gardiens de l'eau sacrée, guides vers l'Autre Monde à travers les mers.",
+        "universal": "Le souffle conscient. Le jeu comme pratique spirituelle. La joie comme sagesse."
+      },
+      "medicine": "La médecine du Dauphin est celle du rythme — inspirer, expirer, jouer, se connecter, recommencer.",
+      "shadow_animal": "pieuvre",
+      "lover_profile": {
+        "style": "Le partenaire le plus fun que tu auras jamais, et peut-être le plus collant",
+        "strengths": "Affectueux, joueur, attentionné à un degré qui peut sembler irréel au début. Le Dauphin adore aimer — et il est très bon. Il crée une bulle de bonheur autour du couple qui est franchement addictive.",
+        "watch_out": "Il a besoin de retour émotionnel constant. Pas de réponse à son message en deux heures ? Il a déjà imaginé trois scénarios catastrophe. Sa grande générosité affective s'accompagne d'un besoin de réciprocité que tout le monde ne peut pas soutenir.",
+        "in_bed": "Enthousiaste, rieur, communicatif. Le Dauphin verbalise, demande, exprime. C'est reposant pour ceux qui n'aiment pas lire dans les pensées.",
+        "dealbreaker": "Le silence froid et le retrait punitif. Le Dauphin préfère une dispute franche à trois jours de mutisme inexpliqué."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.90,
+        "intuition_sensing": 0.55,
+        "thinking_feeling": 0.90,
+        "structure_freedom": 0.35
+      }
+    },
+    {
+      "id": "owl",
+      "name": "Hibou",
+      "emoji": "🦉",
+      "archetype_jung": "Le Sage / L'Archétype de la Mort-Renaissance",
+      "keywords": ["sagesse", "mystère", "vision nocturne", "secret", "transition", "perception"],
+      "element": "air",
+      "traits": {
+        "strengths": ["sagesse profonde", "perception des non-dits", "discernement", "courage face à l'inconnu"],
+        "shadows": ["isolement", "cynisme", "paralysie par l'analyse"],
+        "life_theme": "Voir dans l'obscurité — la vérité cachée derrière les apparences"
+      },
+      "symbolism": {
+        "greek": "Athéna et la chouette — symbole de la sagesse rationnelle et de la connaissance.",
+        "amerindian": "Messager de la mort et de la transformation. Porteur de vérités cachées.",
+        "celtic": "Companion de la déesse Blodeuwedd. Gardien des mystères de la nuit.",
+        "universal": "Ce qui est caché n'est pas absent. La nuit a ses propres révélations."
+      },
+      "medicine": "La médecine du Hibou est celle du discernement — voir au-delà des masques, entendre ce qui n'est pas dit.",
+      "shadow_animal": "mouton",
+      "lover_profile": {
+        "style": "L'amant qui te connaît mieux que toi-même, ce qui peut être magnifique ou terrifying",
+        "strengths": "Le Hibou observe depuis longtemps avant d'agir. Quand il se décide, c'est parce qu'il a vu quelque chose en toi que tu n'avais peut-être pas encore vu toi-même. Cette attention profonde est rare et précieuse.",
+        "watch_out": "Il analyse tout, tout le temps. Ton silence de huit secondes a déjà été décortiqué sous trois angles différents. Si tu n'aimes pas te sentir lu(e), c'est inconfortable. Et il dit la vérité — même quand tu préférerais un mensonge doux.",
+        "in_bed": "Présent d'une façon presque mystérieuse. Lent, concentré, attentif aux détails. Il se souvient de tout ce qui compte pour toi.",
+        "dealbreaker": "Le mensonge et la superficialité. Le Hibou renifle les masques de très loin et les supporte très mal."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.10,
+        "intuition_sensing": 0.90,
+        "thinking_feeling": 0.35,
+        "structure_freedom": 0.50
+      }
+    },
+    {
+      "id": "horse",
+      "name": "Cheval",
+      "emoji": "🐴",
+      "archetype_jung": "Le Héros / L'Explorateur",
+      "keywords": ["liberté", "puissance", "voyage", "passion", "loyauté", "mouvement"],
+      "element": "feu",
+      "traits": {
+        "strengths": ["énergie vitale", "générosité", "passion", "capacité à porter les autres"],
+        "shadows": ["instabilité", "impulsivité", "besoin excessif de mouvement"],
+        "life_theme": "La liberté responsable — courir vers l'horizon sans abandonner ceux qu'on aime"
+      },
+      "symbolism": {
+        "amerindian": "Puissance, liberté, voyage entre les mondes. Amplifie les médecines de son cavalier.",
+        "celtic": "Épona, déesse des chevaux et de la fertilité. Psychopompe, guide des âmes.",
+        "universal": "L'élan vital. La passion comme moteur. Le voyage comme enseignement."
+      },
+      "medicine": "La médecine du Cheval est celle du voyage — chaque chemin est une transformation, chaque galop un apprentissage.",
+      "shadow_animal": "âne",
+      "lover_profile": {
+        "style": "Passionné, généreux, impossible à suivre sur la durée si tu aimes les plans fixes",
+        "strengths": "L'intensité du Cheval est contagieuse. Il t'emmène dans son élan, t'ouvre des horizons que tu n'aurais pas imaginés seul(e), et aime avec une générosité physique et émotionnelle qui laisse une marque.",
+        "watch_out": "Il a besoin de mouvement. Une relation qui se sédimente trop vite — même routine, mêmes habitudes, même appartement — l'étouffe sans qu'il comprenne toujours pourquoi. Ce n'est pas qu'il ne t'aime plus. Il a juste besoin de sentir le vent.",
+        "in_bed": "Énergique, spontané, avec une endurance qui peut surprendre. Rarement le même deux fois de suite.",
+        "dealbreaker": "L'enfermement émotionnel ou physique. Et les partenaires qui veulent le dresser."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.75,
+        "intuition_sensing": 0.65,
+        "thinking_feeling": 0.70,
+        "structure_freedom": 0.10
+      }
+    },
+    {
+      "id": "serpent",
+      "name": "Serpent",
+      "emoji": "🐍",
+      "archetype_jung": "Le Moi / Symbole de Transformation",
+      "keywords": ["transformation", "guérison", "kundalini", "renouveau", "sagesse cachée", "cycles"],
+      "element": "terre/feu",
+      "traits": {
+        "strengths": ["capacité de transformation profonde", "guérison", "sensibilité vibratoire", "patience"],
+        "shadows": ["manipulation", "rancune", "venin émotionnel"],
+        "life_theme": "Muer pour renaître — la transformation comme mode de vie"
+      },
+      "symbolism": {
+        "amerindian": "Transmutation et guérison. Maître de la force vitale.",
+        "greek": "Caducée d'Asclépios — la médecine, la guérison, l'équilibre des opposés.",
+        "hindu": "Kundalini, l'énergie vitale qui s'éveille. Shesha, le serpent cosmique.",
+        "universal": "Chaque peau abandonnée est une ancienne version de soi. La mort qui précède la renaissance."
+      },
+      "medicine": "La médecine du Serpent est celle de la mue — laisser derrière ce qui ne sert plus pour révéler qui l'on devient.",
+      "shadow_animal": "tortue",
+      "lover_profile": {
+        "style": "Magnétique, sensuel, transformateur — une relation avec le Serpent te change",
+        "strengths": "Une présence qui prend toute la place dans le bon sens. Le Serpent est intensément conscient de son corps et du tien. Il y a quelque chose d'hypnotique dans son attention qui rend difficile de penser à autre chose quand il est dans la pièce.",
+        "watch_out": "Il mue. Ce qui veut dire que le Serpent que tu as rencontré en janvier n'est pas forcément celui de juillet. Ses transformations profondes peuvent te laisser à côté d'un inconnu que tu croyais connaître. Ça demande de l'adaptabilité.",
+        "in_bed": "Probablement le plus sensuel du bestiaire. Lent, conscient, attentif à chaque centimètre. Le Serpent ne se précipite jamais.",
+        "dealbreaker": "La rigidité et le refus d'évoluer. Quelqu'un qui veut que rien ne change le fait fuir — ou le force à muer loin de lui."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.20,
+        "intuition_sensing": 0.85,
+        "thinking_feeling": 0.50,
+        "structure_freedom": 0.55
+      }
+    },
+    {
+      "id": "deer",
+      "name": "Cerf / Biche",
+      "emoji": "🦌",
+      "archetype_jung": "L'Innocent / L'Aidant",
+      "keywords": ["douceur", "grâce", "sensibilité", "compassion", "renouveau", "générosité"],
+      "element": "terre",
+      "traits": {
+        "strengths": ["sensibilité raffinée", "grâce naturelle", "compassion", "capacité à régénérer"],
+        "shadows": ["hypersensibilité", "fuite", "difficulté à s'affirmer"],
+        "life_theme": "La douceur comme force — transformer par la grâce plutôt que la puissance"
+      },
+      "symbolism": {
+        "amerindian": "Douceur, gentillesse, amour inconditionnel. Remplacer la force par l'amour.",
+        "celtic": "Messenger des dieux, guide vers l'Autre Monde. Les cerfs blancs annoncent les quêtes sacrées.",
+        "universal": "La vulnérabilité comme courage. La tendresse comme acte révolutionnaire."
+      },
+      "medicine": "La médecine du Cerf est celle de la douceur — approcher ce qui est sauvage en soi avec tendresse plutôt qu'avec force.",
+      "shadow_animal": "tigre",
+      "lover_profile": {
+        "style": "Doux, attentionné, le genre de partenaire qui remarque quand tu as l'air fatigué(e)",
+        "strengths": "Le Cerf aime avec une délicatesse rare. Il ne bouscule pas, n'impose pas, ne prend pas de place que tu ne lui as pas offerte. Être aimé(e) par un Cerf, c'est se sentir vu(e) et respecté(e) dans sa totalité.",
+        "watch_out": "Sa douceur peut masquer une difficulté à dire non, à formuler ses besoins, à tenir bon dans un conflit. Il préfère plier que rompre — jusqu'au jour où il disparaît silencieusement parce qu'il s'est oublié depuis trop longtemps.",
+        "in_bed": "Tendre, attentif, jamais brusque. Il prend son temps et s'assure que tu vas bien — parfois au détriment de son propre plaisir.",
+        "dealbreaker": "La brutalité, même verbale. Une remarque cinglante que tu aurais déjà oubliée, lui la porte pendant des semaines."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.50,
+        "intuition_sensing": 0.65,
+        "thinking_feeling": 0.95,
+        "structure_freedom": 0.35
+      }
+    },
+    {
+      "id": "raven",
+      "name": "Corbeau",
+      "emoji": "🐦‍⬛",
+      "archetype_jung": "Le Filou / L'Ombre",
+      "keywords": ["magie", "création", "mystère", "intelligence", "ombre", "changement"],
+      "element": "air",
+      "traits": {
+        "strengths": ["intelligence créatrice", "magie", "humour profond", "capacité à voir l'ombre"],
+        "shadows": ["nihilisme", "manipulation", "amour du chaos"],
+        "life_theme": "Créer à partir du vide — le chaos comme matière première de la création"
+      },
+      "symbolism": {
+        "amerindian": "Raven, le Grand Créateur — a volé la lumière pour l'offrir au monde.",
+        "nordic": "Hugin et Munin, les corbeaux d'Odin — Pensée et Mémoire, messagers cosmiques.",
+        "celtic": "La Morrigan, déesse du destin. Prophétie, magie, transformation.",
+        "universal": "L'intelligence qui joue avec les limites. Le créateur qui transgresse pour inventer."
+      },
+      "medicine": "La médecine du Corbeau est celle de la magie — transformer le plomb en or, l'obscurité en lumière.",
+      "shadow_animal": "colombe",
+      "lover_profile": {
+        "style": "Envoûtant, imprévisible, le genre de relation dont tu parles encore dix ans après",
+        "strengths": "Une intelligence et un humour qui rendent les autres partenaires un peu fades en comparaison. Le Corbeau te surprend, te challenge, te fait rire à des moments improbables. Il t'emmène dans des endroits de toi-même que tu n'aurais pas explorés seul(e).",
+        "watch_out": "Il joue avec les limites — les siennes et les tiennes. Sa fascination pour l'ombre peut l'amener à tester ce que tu tolères, parfois sans même s'en rendre compte. Et il a un talent naturel pour disparaître au moment où tu en as le plus besoin.",
+        "in_bed": "Inattendu. Il considère l'intimité comme une autre forme de création — jamais tout à fait ce que tu anticipais, souvent meilleur.",
+        "dealbreaker": "L'ennui et la prévisibilité totale. Une relation trop sage, trop rangée, l'éteint progressivement."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.40,
+        "intuition_sensing": 0.90,
+        "thinking_feeling": 0.40,
+        "structure_freedom": 0.10
+      }
+    },
+    {
+      "id": "salmon",
+      "name": "Saumon",
+      "emoji": "🐟",
+      "archetype_jung": "Le Héros / Le Sage",
+      "keywords": ["retour aux sources", "persévérance", "sagesse ancienne", "instinct", "cycle", "mémoire"],
+      "element": "eau",
+      "traits": {
+        "strengths": ["détermination absolue", "sagesse instinctive", "retour à l'essentiel", "mémoire profonde"],
+        "shadows": ["obstination", "retour en arrière compulsif", "sacrifice inutile"],
+        "life_theme": "Remonter le courant vers ce qui compte vraiment"
+      },
+      "symbolism": {
+        "celtic": "Le Saumon de la Connaissance — Fintan, sagesse accumulée des âges.",
+        "amerindian": "Abondance, détermination, retour aux origines sacrées.",
+        "universal": "L'instinct de retour. La quête comme voyage intérieur. Mourir pour transmettre."
+      },
+      "medicine": "La médecine du Saumon est celle de la remontée — aller contre le courant par fidélité à sa source.",
+      "shadow_animal": "méduse",
+      "lover_profile": {
+        "style": "Le partenaire le plus déterminé que tu rencontreras — dans le bon et le mauvais sens",
+        "strengths": "Quand le Saumon décide que tu es sa source, il remonte tous les courants pour toi. Une loyauté et une persévérance qui font chaud au cœur. Il ne lâche pas, ne se décourage pas, et se souvient de chaque détail important.",
+        "watch_out": "Cette même détermination peut devenir de l'obstination. Le Saumon a du mal à accepter qu'une relation soit terminée — il continue de remonter même quand la rivière s'est asséchée. Et il a tendance à mettre la mission (sa mission) avant le reste.",
+        "in_bed": "Endurant, focus, avec une mémoire parfaite de ce qui fonctionne pour toi. Pas très spontané, mais remarquablement fiable.",
+        "dealbreaker": "L'abandon à mi-chemin et les personnes sans profondeur. Il ne comprend pas qu'on puisse renoncer à quelque chose d'important par confort."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.25,
+        "intuition_sensing": 0.60,
+        "thinking_feeling": 0.40,
+        "structure_freedom": 0.85
+      }
+    },
+    {
+      "id": "jaguar",
+      "name": "Jaguar",
+      "emoji": "🐆",
+      "archetype_jung": "Le Guerrier / Le Mage",
+      "keywords": ["pouvoir", "intuition", "nuit", "chamanisme", "intégration de l'ombre", "précision"],
+      "element": "eau/terre",
+      "traits": {
+        "strengths": ["puissance maîtrisée", "vision dans l'obscurité", "intégration des contraires", "précision"],
+        "shadows": ["isolement", "domination", "peur de sa propre puissance"],
+        "life_theme": "Intégrer la puissance sans en être possédé"
+      },
+      "symbolism": {
+        "mayan": "Ix, le Jaguar — gardien du monde souterrain et de la nuit. Dieu-chaman par excellence.",
+        "aztec": "Tezcatlipoca, miroir fumant — l'ombre, la nuit, la vérité difficile.",
+        "universal": "La puissance qui n'a pas besoin de se prouver. L'ombre intégrée devient lumière."
+      },
+      "medicine": "La médecine du Jaguar est celle de l'intégration — embrasser sa propre ombre pour libérer sa pleine puissance.",
+      "shadow_animal": "chèvre",
+      "lover_profile": {
+        "style": "Intense, magnétique, le genre de relation qui laisse des marques",
+        "strengths": "Une présence physique et émotionnelle qui prend toute la pièce. Le Jaguar ne fait pas semblant — quand il est là, il est vraiment là. Son attention totale est un cadeau rare, et son désir est aussi direct que son regard.",
+        "watch_out": "Il ne montre pas facilement ses vulnérabilités — et peut interpréter les tiennes comme une faiblesse, même sans le vouloir. L'intimité émotionnelle lui demande un effort conscient qu'il n'a pas toujours envie de fournir.",
+        "in_bed": "Puissant, présent, avec un sens instinctif du moment. Le Jaguar chasse — au bon sens du terme. Il aime la tension avant l'abandon.",
+        "dealbreaker": "La faiblesse d'ego et la dépendance affective excessive. Il a besoin d'un partenaire qui se tient debout seul."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.15,
+        "intuition_sensing": 0.90,
+        "thinking_feeling": 0.35,
+        "structure_freedom": 0.55
+      }
+    },
+    {
+      "id": "platypus",
+      "name": "Ornithorynque",
+      "emoji": "🦆",
+      "archetype_jung": "Le Trickster Primordial / L'Inclassable",
+      "keywords": ["paradoxe", "originalité", "multidimensionnalité", "sens caché", "évolution", "non-conformité"],
+      "element": "eau/terre",
+      "traits": {
+        "strengths": ["pensée non-linéaire", "capacité à habiter plusieurs mondes", "détection de ce que les autres ne perçoivent pas", "résilience face au rejet"],
+        "shadows": ["sentiment d'être fondamentalement incompris", "difficulté à se définir soi-même", "épuisement de devoir constamment expliquer qui on est"],
+        "life_theme": "Être une réponse vivante à la question : et si les cases n'existaient pas ?"
+      },
+      "symbolism": {
+        "biological": "Mammifère qui pond des œufs, a un bec de canard, une queue de castor, des pattes de loutre, et détecte les champs électriques avec son bec. Les premiers naturalistes européens qui en reçurent une dépouille crurent à une imposture.",
+        "aboriginal_australian": "Dans les traditions du Dreamtime, l'ornithorynque (Mallangong) est un être de l'entre-deux, né d'une union impossible entre un canard et un rat d'eau. Il rappelle que la création ignore les frontières que les humains imposent.",
+        "universal": "L'évolution comme preuve vivante que la nature se moque des catégories. Ce qui semble aberrant aujourd'hui est peut-être la solution de demain."
+      },
+      "medicine": "La médecine de l'Ornithorynque est celle de la libération des cases. Tu n'as pas à choisir une seule identité, un seul camp, une seule façon d'être. Ta complexité n'est pas un défaut d'assemblage — c'est ta forme la plus vraie.",
+      "shadow_animal": "mouton",
+      "lover_profile": {
+        "style": "Déconcertant, attachant, absolument inclassable",
+        "strengths": "Une relation avec l'Ornithorynque ne ressemble à aucune autre. Il arrive avec des angles que tu n'avais pas envisagés, des attentions improbables, des façons d'aimer que les manuels n'ont pas répertoriées. Jamais ennuyeux. Jamais prévisible.",
+        "watch_out": "Il lui faut du temps pour se définir lui-même dans une relation — ce qui peut donner l'impression d'un flou volontaire. 'On est quoi, exactement ?' est une question qui peut rester sans réponse nette pendant un moment inconfortable.",
+        "in_bed": "Inventif, curieux, avec une tendance à proposer des choses auxquelles tu n'avais pas pensé. Ce n'est pas toujours une bonne idée, mais c'est rarement ennuyeux.",
+        "dealbreaker": "Les étiquettes imposées et les partenaires qui veulent le faire rentrer dans une case relationnelle standard."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.35,
+        "intuition_sensing": 0.85,
+        "thinking_feeling": 0.55,
+        "structure_freedom": 0.1
+      },
+      "response_patterns": {
+        "obstacle": ["approche par un angle que personne n'a considéré", "questionne la définition même du problème", "trouve des ressources dans des domaines apparemment sans rapport"],
+        "environment": ["zones de transition", "rivières entre deux rives", "lieux inclassables"],
+        "value": ["authenticité radicale", "curiosité sans frontières", "le paradoxe comme vérité"],
+        "fear": ["être forcé de choisir un seul camp", "la simplification réductrice", "l'obligation de cohérence artificielle"]
+      }
+    },
+    {
+      "id": "starfish",
+      "name": "Étoile de Mer",
+      "emoji": "⭐",
+      "archetype_jung": "Le Régénérateur / L'Éternel Recommencement",
+      "keywords": ["régénération", "guidance", "lenteur sacrée", "profondeur", "renouveau", "orientation"],
+      "element": "eau",
+      "traits": {
+        "strengths": ["capacité extraordinaire à se reconstruire après une perte", "navigation intérieure précise", "présence totale dans le mouvement lent", "ancrage dans la profondeur"],
+        "shadows": ["paralysie face à trop de directions possibles (cinq bras, cinq chemins)", "retrait dans la profondeur au point de disparaître", "lenteur perçue comme passivité"],
+        "life_theme": "Retrouver son centre après chaque tempête — et rayonner à partir de là."
+      },
+      "symbolism": {
+        "maritime_universal": "L'étoile de mer est un être radial — elle n'a pas de tête, pas de queue, pas de hiérarchie de ses parties. Chaque bras peut devenir un organisme complet. Elle incarne la régénération absolue : perde un bras n'est pas une amputation, c'est une naissance.",
+        "christian_medieval": "Stella Maris — étoile de la mer, guide des navigateurs perdus. Marie comme phare dans la tempête.",
+        "biological_marvel": "Son estomac sort de son corps pour digérer sa proie. Ce qui est intérieur et extérieur n'est pas fixe. Les frontières du soi sont perméables."
+      },
+      "medicine": "La médecine de l'Étoile de Mer est celle de la régénération sans victimisation. Elle ne pleure pas son bras perdu — elle en fait un nouvel être. Ce que tu as traversé ne t'a pas brisé(e). Tu es en train de te régénérer, et ce que tu redeviens est plus complet que ce que tu étais.",
+      "shadow_animal": "crabe",
+      "lover_profile": {
+        "style": "Doux, profond, lent à s'ouvrir — mais capable de te redonner confiance en l'amour",
+        "strengths": "L'Étoile de Mer a souvent traversé des pertes et s'est reconstruite. Cette profondeur acquise en fait un partenaire d'une maturité émotionnelle rare. Il ne panique pas, ne fuit pas les sujets difficiles, et sait que l'amour se reconstruit après les tempêtes.",
+        "watch_out": "Il descend parfois dans des profondeurs où tu ne peux pas le suivre. Ces retraits silencieux ne sont pas un rejet — mais ils peuvent en avoir l'air. Et ses cinq bras tirent parfois dans cinq directions : il lui faut du temps pour choisir.",
+        "in_bed": "Lent, attentif, avec une conscience du corps surprenante. L'Étoile de Mer ne se précipite jamais. Elle explore.",
+        "dealbreaker": "La brutalité émotionnelle et les personnes qui confondent lenteur et faiblesse."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.2,
+        "intuition_sensing": 0.7,
+        "thinking_feeling": 0.75,
+        "structure_freedom": 0.45
+      },
+      "response_patterns": {
+        "obstacle": ["descend au fond pour trouver sa réponse", "prend le temps qu'il faut", "se régénère plutôt que de résister"],
+        "environment": ["eau profonde", "zones marines", "lieux silencieux et anciens"],
+        "value": ["renouveau", "profondeur", "orientation intérieure"],
+        "fear": ["être emporté sans ancrage", "la perte permanente", "ne pas retrouver son centre"]
+      }
+    },
+    {
+      "id": "spider",
+      "name": "Araignée",
+      "emoji": "🕷️",
+      "archetype_jung": "Le Créateur / La Grande Tisseuse",
+      "keywords": ["création", "destin", "langage", "piège-don", "patience", "interconnexion"],
+      "element": "air/terre",
+      "traits": {
+        "strengths": ["construction patiente de structures complexes", "sens aigu des vibrations et des sous-textes", "création comme acte de survie", "capacité à habiter le centre et la périphérie simultanément"],
+        "shadows": ["manipulation des liens", "repli dans sa propre toile au détriment du monde", "perfectionnisme paralysant", "peur d'être écrasé(e) par les plus grands"],
+        "life_theme": "Tisser le monde que tu veux habiter — fil par fil, avec intention."
+      },
+      "symbolism": {
+        "amerindian": "Grandmother Spider (Kokopelli's cousin) — dans les traditions Hopi et Navajo, l'Araignée Femme est la créatrice du monde, celle qui a tissé la réalité avec du fil solaire. Elle enseigne l'écriture, le langage, les symboles.",
+        "west_african_caribbean": "Anansi l'araignée — le Trickster suprême des traditions Ashanti, qui vola les histoires du dieu du ciel. Toutes les histoires du monde appartiennent à l'Araignée.",
+        "greek": "Arachné, la tisseuse mortelle qui défia Athéna et fut transformée. Le talent créateur qui défie les dieux — et survit sous une autre forme.",
+        "universal": "La toile comme métaphore de l'interdépendance : tout est connecté, chaque fil transmet la vibration de tous les autres."
+      },
+      "medicine": "La médecine de l'Araignée est celle de la création consciente. Tu tisses ta réalité à chaque choix, chaque mot, chaque lien que tu noues ou coupes. La question n'est pas si tu tisses — c'est si tu le fais avec intention. Quelle toile veux-tu vraiment construire ?",
+      "shadow_animal": "papillon",
+      "lover_profile": {
+        "style": "Stratège du lien, tisseuse d'intimité — elle construit une toile autour de toi avant que tu t'en rendes compte",
+        "strengths": "L'Araignée crée l'environnement relationnel le plus pensé que tu connaîtras. Chaque attention, chaque mot, chaque rituel du couple est tissé avec intention. Être aimé(e) par une Araignée, c'est habiter une architecture affective solide et belle.",
+        "watch_out": "Elle sait exactement quels fils tirer pour obtenir ce qu'elle veut — parfois sans le dire directement. Et sa toile, si belle soit-elle, peut devenir un piège pour les partenaires qui ont besoin de plus d'espace que prévu.",
+        "in_bed": "Méthodique dans le meilleur sens du terme. Elle a retenu exactement ce qui fonctionne et construit dessus. Pas beaucoup d'improvisation, mais une précision redoutable.",
+        "dealbreaker": "Détruire ce qu'elle a construit — que ce soit la confiance, un projet commun, ou la toile relationnelle qu'elle entretenait avec soin."
+      },
+      "personality_profile": {
+        "introvert_extrovert": 0.15,
+        "intuition_sensing": 0.9,
+        "thinking_feeling": 0.5,
+        "structure_freedom": 0.6
+      },
+      "response_patterns": {
+        "obstacle": ["tisse une nouvelle structure autour de l'obstacle", "patience absolue au centre de la toile", "sent la vibration avant que le problème arrive"],
+        "environment": ["espaces que l'on construit soi-même", "recoins et marges", "entre deux mondes"],
+        "value": ["création", "interconnexion", "langage et symboles"],
+        "fear": ["voir sa toile détruite", "le chaos sans structure possible", "l'invisibilité totale"]
+      }
+    }
+  ]
+}

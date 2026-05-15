@@ -1,0 +1,15 @@
+# secrets
+.env
+
+# build output
+totem
+
+# runtime data
+data/
+*.db
+
+# Go
+vendor/
+
+# Claude
+.claude
